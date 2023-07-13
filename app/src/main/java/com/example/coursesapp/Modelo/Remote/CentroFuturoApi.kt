@@ -12,10 +12,10 @@ interface CentroFuturoApi {
 
 
     @GET("courses")
-    suspend fun fecthCoursesList():Response<List <Course>>
+    suspend fun fecthCoursesList(): Response<List <Course>>
 
     @GET("courses/{id}")
-    suspend fun fecthCoursesDetail(@Path("id")id:String):Response<List <CourseDetail>>
+    suspend fun fecthCoursesDetail(@Path("id")id:String): Response <CourseDetail>
 
 
 }

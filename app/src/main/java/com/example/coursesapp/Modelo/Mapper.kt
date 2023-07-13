@@ -21,7 +21,7 @@ fun fromInternetToCousesEntity(coursesList:List<Course>):List<CoursesEntity>{
     }
 
 }
-fun fromInternetToCousesDetailEntity(course:CourseDetail):CoursesDetailEntity{
+fun fromInternetToCoursesDetailEntity(course:CourseDetail):CoursesDetailEntity{
 
     return  CoursesDetailEntity(
             id=course.id,
@@ -31,7 +31,7 @@ fun fromInternetToCousesDetailEntity(course:CourseDetail):CoursesDetailEntity{
             weeks = course.weeks,
             tuition = course.tuition,
             miniumSkill = course.miniumSkill,
-            scholashipAvailable = course.scholashipAvailable,
+            scholashipAvailable = true,
             modality = course.modality,
             star = course.star
 

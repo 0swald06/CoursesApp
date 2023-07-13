@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 data class CoursesDetailEntity (
 
     @PrimaryKey
-    @NonNull
     val id:String,
     val title:String,
     val previewDescription:String,

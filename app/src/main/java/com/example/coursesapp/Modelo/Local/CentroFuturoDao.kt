@@ -22,7 +22,7 @@ interface CentroFuturoDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAllCoursesDetail(course: CoursesDetailEntity)
 
-    @Query("SELECT * FROM course_details_table ORDER BY id ASC")
-    fun getAllCoursesDetailByID(id:String): CoursesDetailEntity
+  //  @Query("SELECT * FROM course_details_table ORDER BY id ASC")
+  //  fun getAllCoursesDetailByID(id:String): CoursesDetailEntity
 
 }
